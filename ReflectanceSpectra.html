@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Reflectance Spectra</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
 </head>
 
 <body>
-  <div id='tester'>
+  <div id='plot'>
     <script>
-      TESTER = document.getElementById('tester');
+      PLOT = document.getElementById('plot');
       var layout = {
         title: {
           text: 'Reflectance vs Wavelength',
@@ -44,7 +44,7 @@
           }
         }
       };
-      Plotly.newPlot(TESTER, [{
+      Plotly.newPlot(PLOT, [{
         x: [470, 525, 560, 585, 600, 645, 700],
         y: [36.81415929, 29.13616398, 40.27972028, 79.62697274, 91.19318182, 97.46268657, 104.6130952]
       }], layout, {
